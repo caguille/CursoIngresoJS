@@ -36,7 +36,7 @@ switch (laHora)
     case "4":
     case "5":
     case "6":
-    alert ("esde noche");
+    alert ("es de noche");
     break;
 
     default:
