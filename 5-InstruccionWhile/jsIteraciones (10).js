@@ -1,7 +1,7 @@
 function Mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta=true;
+	var respuesta="si";
 	var num;
 	var aneg=0;
 	var apos=0;
@@ -9,10 +9,11 @@ function Mostrar()
 	var contneg=0;
 	var contpar=0;
 	var contceros=0;
-	while(respuesta==true)
+	while(respuesta!="no")
 	{
-		num=prompt ("ingrese un numero")
+		num=prompt ("ingrese un numero");
 		num=parseInt (num);
+		respuesta=prompt ("Desea ingresar otro numero:?");
 	if(num<0)
 	{
 		aneg+=num;
@@ -33,10 +34,14 @@ function Mostrar()
 		contpar++;
 	}
 	}
+	var Prompos = apos/contpos;
+	var promneg = aneg/contneg;
 
-document.write ("" )
-
-
+document.write ("<br> 1_la suma de los negativos es:"+aneg);
+document.write ("<br> 2_la suma de los positivos es:"+apos);
+document.write ("<br> 3_la cantidad de los positivos es:"+contpos);
+document.write ("<br> 4_la cantidad de los negativos es:"+contneg);
+document.write ("<br> 6_la cantidad de numeros pares:"+contpar);
 	
 
 

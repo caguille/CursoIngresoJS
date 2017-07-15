@@ -6,18 +6,14 @@ function Mostrar()
 	var num
 	var numMax;
 	var numMin;
-	var respuesta=true;
+	var respuesta="si";
 	var bandera=true
 
-	while(respuesta==true)
+	while(respuesta!="no")
 	{
 		num=prompt ("ingrese un numero")
 		num=parseInt(num);
-		while (isNaN (num))
-		{
-			num=prompt ("no es un numero");
-
-		}
+		respuesta=prompt ("desea ingresar otro numero:?")
 		if (bandera)
 		{
 			numMax=num;
@@ -33,9 +29,11 @@ function Mostrar()
 			{
 				numMin=num;
 			}
-			}
+	
 	}
-	respuesta=confirm (respuesta==false);
+		
+	}
+	
 	
 
 
