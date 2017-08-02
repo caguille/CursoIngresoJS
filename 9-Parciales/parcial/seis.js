@@ -5,7 +5,7 @@ function Mostrar()
     var mayorim;
     var menorim;
     var bandera=true;
-   while(contador<5)
+   while(contador<24)
    {
         importe= prompt ("ingrese un numero");
         contador++;
@@ -29,7 +29,7 @@ function Mostrar()
             {
                 menorim=importe;
 
-           }
+            }
         
         
 
